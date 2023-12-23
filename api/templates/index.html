@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    h1 { font-size: 28px; font-family: 'Times New Roman'; }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Parkinsons Disease Early Prediction</title>
+</head>
+<body style="background-color:#FFF9C4;">
+    <center>
+        <h1>Parkinsons Disease Predictor<br></h1>
+    
+    <br>
+    <br>
+    <h3>Please enter form data -</h3>
+    <br>
+    <form action="{{ url_for('prediction') }}" method="POST">
+        <input type="text" name="Patient_ID" placeholder="Enter Patient ID"><br>
+        <input type="text" name="MDVP_Fo_Hz" placeholder="Enter MDVP:Fo(Hz)"><br>
+        <input type="text" name="MDVP_Fhi_Hz" placeholder="Enter MDVP:Fhi(Hz)"><br>
+        <input type="text" name="MDVP_Flo_Hz" placeholder="Enter MDVP:Flo(Hz)"><br>
+        <input type="text" name="MDVP_APQ" placeholder="Enter MDVP:APQ"><br>
+        <input type="text" name="NHR" placeholder="Enter NHR"><br>
+        <input type="text" name="RPDE" placeholder="Enter RPDE"><br>
+        <input type="text" name="DFA" placeholder="Enter DFA"><br>
+        <input type="text" name="spread1" placeholder="Enter spread1"><br>
+        <input type="text" name="spread2" placeholder="Enter spread2"><br>
+        <input type="text" name="D2" placeholder="Enter D2"><br>
+        <input type="submit" value="Submit">
+    </form>
+</center>
+</body>
+</html>
