@@ -9,6 +9,7 @@ from statsmodels.stats.outliers_influence import variance_inflation_factor
 import os
 
 app = Flask(__name__)
+app.template_folder = "./api/templates"
 
 @app.route("/")
 def main():
