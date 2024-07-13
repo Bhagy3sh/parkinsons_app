@@ -30,3 +30,5 @@ This web application built with Flask uses machine learning to predict whether a
    ```bash
    python app.py
    ```
+
+This directory is for deployment purpose in Render. You may not need the exact directory when cloning and testing the app for yourself.
